@@ -16,9 +16,8 @@
     // Query the success callback
     //
     function querySuccess(tx, results) {
-		results = join(results);
-        alert(results);
-    }
+		alert(results.rows.length);
+		    }
 	  function errorCB(err) {
        alert("error");
     }
