@@ -20,9 +20,23 @@
     // Query the success callback
     //
     function querySuccess(tx, results) {
-		res = toString(results);
-		alert(res);
+	
+	 var len = results.rows.length;
+     
+        for (var i=0; i<len; i++){
+            alert("Row = " + i + " ID = " + results.rows.item(i).id + " Data =  " + results.rows.item(i).data);
+        }
+		  
+		  
+		  
+		  
 		    }
+			
+			
+			
+			
+			
+			
 	  function errorCB(err) {
        alert("error");
     }
